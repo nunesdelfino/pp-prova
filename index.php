@@ -53,7 +53,7 @@
             </div>
             <h3 class="fs-2">Problema 3</h3>
             <p>Recepção de informações acadêmicas, nome de um aluno, disciplina e nota dessa disciplina, realizar um cadastro e enviar para um formulário.</p>
-            <a href="desafio3.php" class="icon-link d-inline-flex align-items-center btn btn-primary">
+            <a href="prob02_form_disciplinas.php" class="icon-link d-inline-flex align-items-center btn btn-primary">
                 Call to action
             </a>
         </div>
