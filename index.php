@@ -74,7 +74,7 @@
         <div class="py-5 alunos">
             <p>Gabriel Nunes Delfino</p><br>
             <p>Luis Fernando Fortaleza de Alencar</p><br>
-            <p>Maria Eduarda Falcão</p><br>
+            <p>Maria Eduarda Falcão de Oliveira</p><br>
             
         </div>
             

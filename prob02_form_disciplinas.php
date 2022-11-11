@@ -77,14 +77,40 @@
                 </form>
 
                 <?php
+                    
+                    $count = -1;
+                    $pos = 0;
+                    do {
+                        $varFim = $_SESSION[$nome][$pos];
+                        $pos++;
+                        $count++;
+                    } while ($varFim != NULL);
 
                     if (isset($_GET['nome']) || isset($_GET['disciplina']) || isset($_GET['nota'])) {
-                        $_SESSION[$nome][] = "Disciplina: ".$_GET['disciplina'] . " - Média: ".$_GET['nota'];
+
+                        if(isset($_SESSION[$nome])){
+                            for ($i = 0; $i < $count; $i++) {
+                                $dados = explode("#:#",$_SESSION[$nome][$i]);
+                                
+                                if($_GET['disciplina'] == $dados[0]){
+                                    $dados[1] = (($_GET['nota'] + $dados[1])/2);
+                                    $_SESSION[$nome][$i] = $dados[0]."#:#".$dados[1];
+                                    break;
+                                } 
+                            }
+                            if($i == $count){
+                                $_SESSION[$nome][] = $_GET['disciplina']."#:#".$_GET['nota'];
+                            }
+                        } else {
+                            $_SESSION[$nome][] = $_GET['disciplina']."#:#".$_GET['nota'];
+                        }
+
                     }
                     $disciplinas = array();
                     if (isset($_SESSION[$nome])) {
                         $disciplinas = $_SESSION[$nome];
                     }
+                    
                 ?>
                 
                 <br>
@@ -93,10 +119,15 @@
                 
                 <h5><b>Disciplinas</b></h5>
                 <textarea id='area' name='area' rows='10' cols='60'>
-
-                    <?php foreach ($disciplinas as $disciplina) : ?>
-                        <?php echo "$disciplina"; ?>&#13;&#10;
-                    <?php endforeach; ?>
+                    
+                        <?php foreach ($disciplinas as $disciplina) : 
+                            $dados = explode("#:#",$disciplina);    
+                            $msg = "Disciplina: ".$dados[0]." - Nota: ".$dados[1];
+                        ?>
+                            <?php echo "$msg"; ?>&#13;&#10;
+                        <?php endforeach; ?>
+                    
+                    
                 </textarea>
                     
             </div>

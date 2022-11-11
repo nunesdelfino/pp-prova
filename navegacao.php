@@ -15,7 +15,7 @@ function navegacao(){};
           <i class="fa-solid fa-calculator "></i>
             <span>Problema 2</span>
           </a>
-          <a class="navbar-item" href="desafio3.php">
+          <a class="navbar-item" href="prob02_form_disciplinas.php">
           <i class="fa-solid fa-receipt"></i>
             <span>Problema 3</span>
           </a>

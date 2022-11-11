@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Calculadora</title>
+        <title>PROBLEMA 4</title>
 
         <script src="https://kit.fontawesome.com/7f335cf7b9.js" crossorigin="anonymous" ></script>
 
@@ -28,7 +28,84 @@
                 </h3>
         </div>
         <div class="container">
+            <form action="ativ_formulario2.php" method="get">
+            <div class="form-group">
+                            <label>Nome</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="nome"
+                                placeholder="Insira o nome" required>
+            </div>
+            <div class="form-group">
+                            <label>Idade</label>
+                            <input
+                                type="number"
+                                class="form-control"
+                                name="number"
+                                placeholder="Insira a idade" required>
+            </div>
             
+<div>
+<label>SEXO</label><br>
+            <div class="form-check form-check-inline">
+           
+                            <input
+                                class="form-check-input"
+                                type="radio"
+                                name="operacao"
+                                value="masc"
+                                checked="checked">
+                            <label class="form-check-label">
+                                MASCULINO
+                            </label>
+                        </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="operacao" value="femin">
+                        <label class="form-check-label">
+                            FEMININO
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <br><label>Selecione os dispositivo que você possui</label><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="pc" id="defaultCheck1">
+                        <label class="form-check-label" >
+                            Computador
+                        </label>
+                        </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="note" id="defaultCheck1">
+                        <label class="form-check-label">
+                            Notebook
+                        </label>
+                        </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="cel" id="defaultCheck1">
+                        <label class="form-check-label" >
+                            Smartphone
+                        </label>
+                        </div>
+                </div>
+                <div>
+                
+                <br><label for="experiencia">Experiencia com programação:</label>
+
+                    <select name="experiencia" id="experiencia">
+                    <option value="nao-tem">Não Possui</option>
+                    <option value="Iniciante">Iniciante</option>
+                    <option value="Interm">Intermediário</option>
+                    <option value="avanc">Avançado</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            
+
+            </form> 
         </div>
     </main>
     <script
