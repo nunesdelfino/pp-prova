@@ -1,5 +1,6 @@
 <input type="button" value="Voltar" onClick="history.go(-1)">
 
+<!--Avisos-->
 <?php
     if (  !isset($_GET['var_qtd']) ) { ?>
          <h1><?php echo "resposta.php foi acessada diretamente."?></h1>

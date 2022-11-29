@@ -1,4 +1,6 @@
 <?php session_start(); ?>
+
+<!--Valor inicializado-->
 <?php
 
     if(!isset($_SESSION['idade'])){
@@ -36,6 +38,7 @@
             crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
 
         <!-- NAVBAR -->
@@ -146,6 +149,7 @@
                         $resultado = $_GET['valor1'] / $_GET['valor2'];
                     }
 
+                    //O especial eh valor1 + idade
                     if(isset($_GET['operacao']) && $_GET['operacao'] == 'especial'){
                         $resultado = $_GET['valor1'] + $_GET['idade'];
                     }
@@ -155,6 +159,7 @@
                 <br>
                 <br>
 
+                <!--Exibe o resultado inserido na variavel resultado-->
                 <div class="titulo">
                     <h4 >
                         Seu resutado é: <?php echo $resultado; ?>

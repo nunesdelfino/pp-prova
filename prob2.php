@@ -1,5 +1,8 @@
 <?php 
 
+//Se a variavel ainda nao foi declarada e se encontra vazia
+//Nome do cookie, valor que vai assumir do cookie e o tempo que vai valer isso 
+//e podera nao funcionar mais
 $name = ["nome","telefone","email"];
 if (!isset($_GET['idade'])){
     setcookie($name[0], " " ,time() + (86400 * 30)); 

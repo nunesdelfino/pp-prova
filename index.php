@@ -21,6 +21,7 @@
     
     <?php include ('navegacao.php');?>
 
+    <!--Informacao das atividades-->
     <main>
         <div class="container px-4 py-3 alunos">
             <h2 class="pb-2 border-bottom">Atividade Avaliativa de Prática de Programação</h2>

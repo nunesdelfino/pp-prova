@@ -74,6 +74,7 @@
                         <textarea name="configcel" rows='5' cols='60'></textarea>
                     </div>
 
+                    <!--Se tiver experiencia exibe as linguagens-->
                     <div <?php if(isset($_GET['experiencia']) && $_GET['experiencia'] == "nao-tem") echo 'style="display:none;"' ?>>
                         <br>
                         <label>Selecione as linguagens você possui conhecimento</label><br>

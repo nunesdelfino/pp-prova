@@ -26,6 +26,7 @@
                     PROBLEMA (4) - Parte 2
                 </h3>
             </div>
+            <!--Formulario de exibicao-->
             <div class="container">
                 <form action="ativ_resultado.php" method="get">
                     <div class="form-group">

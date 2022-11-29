@@ -31,7 +31,7 @@
 
         <!-- NAVBAR -->
         <?php include ('navegacao.php');?>
-
+<!--Formulario e variaveis-->
         <main>
             <div class="titulo">
                 <h3 >

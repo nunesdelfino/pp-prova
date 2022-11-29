@@ -31,12 +31,14 @@
             <form action="prob01_script.php" method="get">
                 <div class="input-group">
                     <span class="input-group-text">Digite a quantidade: </span>
-                    <input type="number" class="form-control" name="var_qtd" required min='1'>
+                  <input type="number" class="form-control" name="var_qtd" required min='1'>
                     <button class="btn btn-outline-secondary" type="submit" value="enviar">Enviar</button>
                 </div>
             </form>
         </div>
     </main>
+
+    <!--Script de estilizacao-->
     <script
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
