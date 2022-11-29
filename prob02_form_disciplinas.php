@@ -16,7 +16,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Desafio 03</title>
+        <title>PROBLEMA 03</title>
 
         <script src="https://kit.fontawesome.com/7f335cf7b9.js" crossorigin="anonymous"></script>
 
@@ -122,7 +122,7 @@
                     
                         <?php foreach ($disciplinas as $disciplina) : 
                             $dados = explode("#:#",$disciplina);    
-                            $msg = "Disciplina: ".$dados[0]." - Nota: ".$dados[1];
+                            $msg = "Disciplina: ".$dados[0]." - Média: ".$dados[1];
                         ?>
                             <?php echo "$msg"; ?>&#13;&#10;
                         <?php endforeach; ?>
