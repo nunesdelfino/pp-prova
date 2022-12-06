@@ -1,5 +1,6 @@
 <?php
-function navegacao(){};
+  error_reporting(E_NOTICE);
+  function navegacao(){};
 ?>
 
 <nav class="nvbar">

@@ -1,9 +1,9 @@
 <input type="button" value="Voltar" onClick="history.go(-1)">
 
-<!--Avisos-->
+<!--Avisos e gerar Bem-vindo-->
 <?php
     if (  !isset($_GET['var_qtd']) ) { ?>
-         <h1><?php echo "resposta.php foi acessada diretamente."?></h1>
+         <h1><?php echo "prob01_script.php foi acessada diretamente."?></h1>
     <?php } else { 
                 if( $_GET['var_qtd']<"1" ) { ?>
                     <h1><?php echo "O valor deve ser maior ou igual 1."?></h1>
